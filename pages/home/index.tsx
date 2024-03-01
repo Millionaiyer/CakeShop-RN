@@ -1,6 +1,5 @@
 import { View, Text, StyleSheet, Image } from "react-native";
 import React from "react";
-import Search from "../../components/search";
 import SearchDiv from "./components/searchSection";
 import HeroSection from "./components/HeroSection";
 
