@@ -12,7 +12,7 @@ export default function App() {
       <View style={styles.main}>
         <Status />
         <Header />
-        {/* <Home /> */}
+        <Home />
         {/* <Profile /> */}
         {/* <Category /> */}
       </View>
@@ -25,7 +25,5 @@ const styles = StyleSheet.create({
   main: {
     backgroundColor: "#fff",
     paddingHorizontal: 30,
-    height: 100,
-    flex: 1,
   },
 });
