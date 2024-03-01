@@ -8,19 +8,23 @@ import Status from "./layout/statusbar/statusbar";
 
 export default function App() {
   return (
-    <View style={styles.main}>
+    <>
       <Status />
       <Header />
-      {/* <Home /> */}
-      {/* <Profile /> */}
-      {/* <Category /> */}
-      {/* <Footer /> */}
-    </View>
+      <View style={styles.main}>
+        {/* <Home /> */}
+        {/* <Profile /> */}
+        {/* <Category /> */}
+        <Footer />
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   main: {
     backgroundColor: "#fff",
+    height: 100,
+    flex: 1,
   },
 });
