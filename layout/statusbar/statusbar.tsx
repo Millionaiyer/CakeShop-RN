@@ -13,7 +13,7 @@ export default Status;
 
 const styles = StyleSheet.create({
   statusbar: {
-    padding: 20,
+    padding: 10,
     color: "#fff",
   },
 });

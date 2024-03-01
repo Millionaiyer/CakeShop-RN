@@ -9,14 +9,14 @@ import Status from "./layout/statusbar/statusbar";
 export default function App() {
   return (
     <>
-      <Status />
-      <Header />
       <View style={styles.main}>
+        <Status />
+        <Header />
         {/* <Home /> */}
         {/* <Profile /> */}
         {/* <Category /> */}
-        <Footer />
       </View>
+      <Footer />
     </>
   );
 }
@@ -24,6 +24,7 @@ export default function App() {
 const styles = StyleSheet.create({
   main: {
     backgroundColor: "#fff",
+    paddingHorizontal: 30,
     height: 100,
     flex: 1,
   },
