@@ -13,7 +13,6 @@ const Header = () => {
 const styles = StyleSheet.create({
   header: {
     flex: 1,
-    paddingHorizontal: 20,
     flexDirection: "row",
     justifyContent: "space-between",
   },
