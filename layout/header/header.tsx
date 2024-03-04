@@ -12,9 +12,10 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   header: {
-    flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+    paddingLeft: 40,
+    paddingRight: 40,
   },
 });
 

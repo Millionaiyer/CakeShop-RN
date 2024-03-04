@@ -5,25 +5,20 @@ import Category from "./pages/category";
 import Header from "./layout/header/header";
 import Footer from "./layout/footer/footer";
 import Status from "./layout/statusbar/statusbar";
+import SettingsPage from "./pages/settings";
 
 export default function App() {
   return (
     <>
-      <View style={styles.main}>
-        <Status />
-        <Header />
-        <Home />
-        {/* <Profile /> */}
-        {/* <Category /> */}
-      </View>
+      {/* <View> */}
+      <Status />
+      <Header />
+      {/* <Home /> */}
+      <SettingsPage />
+      {/* <Profile /> */}
+      {/* <Category /> */}
+      {/* </View> */}
       <Footer />
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  main: {
-    backgroundColor: "#fff",
-    paddingHorizontal: 30,
-  },
-});
