@@ -3,9 +3,9 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <ScrollView style={styles.Hero}>
+    <View style={styles.Hero}>
       <Text style={styles.HeroText}>Top Rated</Text>
-      <View style={{ justifyContent: "center", alignItems: "center" }}>
+      <View style={{ justifyContent: "center", alignItems: "center", gap: 30 }}>
         <View style={styles.cakeShowcase}>
           <Image source={require("../../../../assets/images/cakeBlue.png")} />
           <Image source={require("../../../../assets/images/cakeGreen.png")} />
@@ -16,7 +16,7 @@ const HeroSection = () => {
           />
         </View>
       </View>
-    </ScrollView>
+    </View>
   );
 };
 
@@ -24,20 +24,17 @@ export default HeroSection;
 
 const styles = StyleSheet.create({
   Hero: {
-    marginTop: 50,
-    flexDirection: "column",
+    flex: 3,
+    gap: 20,
   },
   HeroText: {
     fontSize: 24,
     fontWeight: "500",
     color: "#000",
-    marginLeft: 20,
-    marginBottom: 30,
+    marginBottom: 20,
   },
   cakeShowcase: {
-    flex: 1,
     flexDirection: "row",
-    justifyContent: "center",
-    marginBottom: 20,
+    gap: 20,
   },
 });
