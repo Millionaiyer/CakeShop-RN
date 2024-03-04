@@ -7,7 +7,7 @@ const searchDiv = () => {
     <View style={styles.searchDiv}>
       <View style={styles.userWrapper}>
         <Text style={styles.user}>Hi Manoj</Text>
-        <Text style={styles.userMessage}>Welcome</Text>
+        <Text style={styles.userMessage}>Welcome back</Text>
       </View>
       <Search />
     </View>
@@ -17,20 +17,19 @@ const searchDiv = () => {
 export default searchDiv;
 
 const styles = StyleSheet.create({
+  searchDiv: {
+    flex: 1,
+  },
   userMessage: {
     fontSize: 16,
     fontWeight: "500",
     color: "#3A3D5E",
-    marginTop: 5,
   },
-  userWrapper: {},
+  userWrapper: { flex: 1 },
   user: {
     fontSize: 24,
     fontWeight: "500",
     color: "#3A3D5E",
-  },
-  searchDiv: {
-    flexDirection: "column",
-    gap: 40,
+    marginTop: 10,
   },
 });

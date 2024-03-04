@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <View style={styles.main}>
       <SearchDiv />
-      {/* search div end */}
       <HeroSection />
     </View>
   );
@@ -17,8 +16,7 @@ export default Home;
 
 const styles = StyleSheet.create({
   main: {
-    paddingTop: 50,
-    flexDirection: "column",
-    gap: 50,
+    flex: 1,
+    marginHorizontal: 15,
   },
 });

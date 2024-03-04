@@ -23,7 +23,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   main: {
-    backgroundColor: "#fff",
-    paddingHorizontal: 30,
+    flex: 1,
+    justifyContent: "flex-start",
+    marginHorizontal: 30,
   },
 });
