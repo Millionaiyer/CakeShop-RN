@@ -6,19 +6,25 @@ const Footer = ({ navigation }) => {
     {
       id: 1,
       screen: "Home",
-      icon: require("../../assets/images/hamburger.png"),
+      icon: require("../../assets/images/footer/home2.png"),
       name: "Home",
     },
     {
       id: 2,
       screen: "Category",
-      icon: require("../../assets/images/hamburger.png"),
+      icon: require("../../assets/images/footer/category.png"),
       name: "Category",
     },
     {
       id: 3,
+      screen: "Cart",
+      icon: require("../../assets/images/footer/cart.png"),
+      name: "Cart",
+    },
+    {
+      id: 4,
       screen: "Profile",
-      icon: require("../../assets/images/hamburger.png"),
+      icon: require("../../assets/images/footer/profile.png"),
       name: "Profile",
     },
   ];
@@ -33,7 +39,7 @@ const Footer = ({ navigation }) => {
               onPress={() => navigation.navigate(items.screen)}
             >
               <Image source={items.icon} />
-              <Text>{items.name}</Text>
+              <Text style={{ marginTop: 3 }}>{items.name}</Text>
             </Pressable>
           );
         })}

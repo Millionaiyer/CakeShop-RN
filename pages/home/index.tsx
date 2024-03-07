@@ -6,11 +6,13 @@ import Footer from "../../layout/footer/footer";
 
 const Home = ({ navigation }) => {
   return (
-    <View style={styles.main}>
-      <SearchDiv />
-      <HeroSection />
+    <>
+      <View style={styles.main}>
+        <SearchDiv />
+        <HeroSection />
+      </View>
       <Footer navigation={navigation} />
-    </View>
+    </>
   );
 };
 
