@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   Hero: {
     flex: 3,
     gap: 20,
+    backgroundColor: "#fff",
   },
   HeroText: {
     fontSize: 24,

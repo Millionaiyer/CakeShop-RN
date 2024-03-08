@@ -19,6 +19,7 @@ export default searchDiv;
 const styles = StyleSheet.create({
   searchDiv: {
     flex: 1,
+    backgroundColor: "#fff",
   },
   userMessage: {
     fontSize: 16,

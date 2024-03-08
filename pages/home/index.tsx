@@ -22,11 +22,11 @@ export default Home;
 
 const styles = StyleSheet.create({
   main: {
-    // backgroundColor: "#fff",
     flex: 1,
   },
   home: {
     flex: 1,
+    backgroundColor: "#fff",
     marginHorizontal: 15,
   },
 });
