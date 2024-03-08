@@ -8,10 +8,12 @@ const Home = ({ navigation }) => {
   return (
     <>
       <View style={styles.main}>
-        <SearchDiv />
-        <HeroSection />
+        <View style={styles.main}>
+          <SearchDiv />
+          <HeroSection />
+        </View>
       </View>
-      <Footer navigation={navigation} />
+      {/* <Footer navigation={navigation} /> */}
     </>
   );
 };
@@ -20,6 +22,10 @@ export default Home;
 
 const styles = StyleSheet.create({
   main: {
+    // backgroundColor: "#fff",
+    flex: 1,
+  },
+  home: {
     flex: 1,
     marginHorizontal: 15,
   },

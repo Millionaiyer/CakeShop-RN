@@ -1,4 +1,12 @@
-import { View, Text, StyleSheet, TextInput, Image } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TextInput,
+  Image,
+  KeyboardAvoidingView,
+  ScrollView,
+} from "react-native";
 import React from "react";
 
 const Search = () => {
