@@ -19,13 +19,14 @@ export default searchDiv;
 const styles = StyleSheet.create({
   searchDiv: {
     flex: 1,
+    backgroundColor: "#fff",
   },
   userMessage: {
     fontSize: 16,
     fontWeight: "500",
     color: "#3A3D5E",
   },
-  userWrapper: { flex: 1 },
+  userWrapper: { flex: 1, marginBottom: 20 },
   user: {
     fontSize: 24,
     fontWeight: "500",

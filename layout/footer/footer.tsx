@@ -1,26 +1,48 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, Pressable } from "react-native";
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ navigation }) => {
+  const data = [
+    {
+      id: 1,
+      screen: "Home",
+      icon: require("../../assets/images/footer/home2.png"),
+      name: "Home",
+    },
+    {
+      id: 2,
+      screen: "Category",
+      icon: require("../../assets/images/footer/category.png"),
+      name: "Category",
+    },
+    {
+      id: 3,
+      screen: "Cart",
+      icon: require("../../assets/images/footer/cart.png"),
+      name: "Cart",
+    },
+    {
+      id: 4,
+      screen: "Profile",
+      icon: require("../../assets/images/footer/profile.png"),
+      name: "Profile",
+    },
+  ];
   return (
     <View style={styles.footerMain}>
       <View style={styles.footerIconsWrapper}>
-        <View style={styles.footerIcon}>
-          <Image source={require("../../assets/images/hamburger.png")} />
-          <Text>Home</Text>
-        </View>
-        <View style={styles.footerIcon}>
-          <Image source={require("../../assets/images/hamburger.png")} />
-          <Text>Category</Text>
-        </View>
-        <View style={styles.footerIcon}>
-          <Image source={require("../../assets/images/hamburger.png")} />
-          <Text>Cart</Text>
-        </View>
-        <View style={styles.footerIcon}>
-          <Image source={require("../../assets/images/hamburger.png")} />
-          <Text>Profile</Text>
-        </View>
+        {data.map((items) => {
+          return (
+            <Pressable
+              key={items.id}
+              style={styles.footerIcon}
+              onPress={() => navigation.navigate(items.screen)}
+            >
+              <Image source={items.icon} />
+              <Text style={{ marginTop: 3 }}>{items.name}</Text>
+            </Pressable>
+          );
+        })}
       </View>
     </View>
   );
