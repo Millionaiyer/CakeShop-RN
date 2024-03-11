@@ -17,6 +17,8 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     marginHorizontal: 10,
     justifyContent: "space-between",
+    paddingLeft: 40,
+    paddingRight: 40,
   },
 });
 
