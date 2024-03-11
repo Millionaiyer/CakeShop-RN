@@ -16,9 +16,17 @@ export default function App() {
       {/* <Home /> */}
       <SettingsPage />
       {/* <Profile /> */}
-      {/* <Category /> */}
+      {/* <Category />   */}
       {/* </View> */}
       <Footer />
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  main: {
+    flex: 1,
+    justifyContent: "flex-start",
+    marginHorizontal: 30,
+  },
+});

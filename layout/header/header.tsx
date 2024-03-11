@@ -12,7 +12,10 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   header: {
+    maxHeight: "auto",
     flexDirection: "row",
+    marginVertical: 20,
+    marginHorizontal: 10,
     justifyContent: "space-between",
     paddingLeft: 40,
     paddingRight: 40,

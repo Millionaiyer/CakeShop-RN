@@ -102,7 +102,6 @@ const SettingsPage = () => {
                     Log Out
                   </Text>
                 </View>
-
                 <Image source={ArrowRight} style={{ width: 18, height: 18 }} />
               </View>
             </View>
